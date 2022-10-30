@@ -98,7 +98,7 @@
                 <option value="5 paczek grape - winogronowych" >6x Grape</option>
                 <option value="6 paczek grape - winogronowych" >7x Grape</option>
                 <option value="7 paczek grape - winogronowych" >8x Grape</option>
-            </select><br><br>
+            </select>
             <h4>
                 <select id="Honney" name="Honney">
                     <option value="0" selected="selected">Honney</option>
