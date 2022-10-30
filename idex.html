@@ -4,18 +4,43 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
-<title>My Example</title>
+<title>BACKWOODS.STOREROOM</title>
     <style>
-        body, ::placeholder, select, option{
+        body, input{
+            font-family: "Courier New", monospace;  
+        }
+         ::placeholder, select, option{
             font-family: "Courier New", monospace;
             padding: 10px;
             max-width: 500px;
             margin: auto;
         }   
 
-        h2, ::placeholder, option, div, button{
+        h2, ::placeholder, option, div, button, input{
             text-align: center;
         }
+        
+
+        div.wybieranie.smaku {
+            margin: auto;
+        }
+        
+        h4 {
+            margin-top: 1px;
+        }
+
+        div.zdjecie {
+            position: fixed;
+            right: 168px;
+            top: 527px;
+        }
+
+        div.zdjecie2 {
+            position: fixed;
+            right: 267px;
+            top: 589px;
+        }
+        
     </style>
 
 
@@ -29,50 +54,147 @@
     <form 
     action="https://formsubmit.co/3cf7b0f6539bd5052219df1aaf5db8f1" method="POST">
 
-        <wybieranie.smaku>
-            <label for="pierwszy smak">Purple</label>
+        <div class="wybieranie.smaku">
             <select id="Purple" name="Purple">
                 <option value="0" selected="selected">Purple</option>
-                <option value="1 paczka purple - miodowo jagodowych" >1</option>
-                <option value="2 paczki purple - miodowo jagodowych" >2</option>
-                <option value="3 paczki purple - miodowo jagodowych" >3</option>
-                <option value="4 paczki purple - miodowo jagodowych" >4</option>
-                <option value="5 paczek purple - miodowo jagodowych" >5</option>
-                <option value="6 paczek purple - miodowo jagodowych" >6</option>
-                <option value="7 paczek purple - miodowo jagodowych" >7</option>
-                <option value="8 paczek purple - miodowo jagodowych" >8</option>
+                <option value="1 paczka purple - miodowo jagodowych" >1x Purple</option>
+                <option value="2 paczki purple - miodowo jagodowych" >2x Purple</option>
+                <option value="3 paczki purple - miodowo jagodowych" >3x Purple</option>
+                <option value="4 paczki purple - miodowo jagodowych" >4x Purple</option>
+                <option value="5 paczek purple - miodowo jagodowych" >5x Purple</option>
+                <option value="6 paczek purple - miodowo jagodowych" >6x Purple</option>
+                <option value="7 paczek purple - miodowo jagodowych" >7x Purple</option>
+                <option value="8 paczek purple - miodowo jagodowych" >8x Purple</option>
             </select>
 
-            <select id="blue" name="blue">
-                <option value="0" selected="selected">blue</option>
-                <option value="1 paczka blue - waniliowych" >1</option>
-                <option value="2 paczki blue - waniliowych" >2</option>
-                <option value="3 paczki blue - waniliowych" >3</option>
-                <option value="3 paczki blue - waniliowych" >4</option>
-                <option value="4 paczki blue - waniliowych" >5</option>
-                <option value="5 paczek blue - waniliowych" >6</option>
-                <option value="6 paczek blue - waniliowych" >7</option>
-                <option value="7 paczek blue - waniliowych" >8</option>
+            <select id="Blue" name="Blue">
+                <option value="0" selected="selected">Blue</option>
+                <option value="1 paczka blue - waniliowych" >1x Blue</option>
+                <option value="2 paczki blue - waniliowych" >2x Blue</option>
+                <option value="3 paczki blue - waniliowych" >3x Blue</option>
+                <option value="3 paczki blue - waniliowych" >4x Blue</option>
+                <option value="4 paczki blue - waniliowych" >5x Blue</option>
+                <option value="5 paczek blue - waniliowych" >6x Blue</option>
+                <option value="6 paczek blue - waniliowych" >7x Blue</option>
+                <option value="7 paczek blue - waniliowych" >8x Blue</option>
+            </select>
+            
+            <select id="Caribe" name="Caribe">
+                <option value="0" selected="selected">Caribe</option>
+                <option value="1 paczka caribe - rumowych" >1x Caribe</option>
+                <option value="2 paczki caribe - rumowych" >2x Caribe</option>
+                <option value="3 paczki caribe - rumowych" >3x Caribe</option>
+                <option value="3 paczki caribe - rumowych" >4x Caribe</option>
+                <option value="4 paczki caribe - rumowych" >5x Caribe</option>
+                <option value="5 paczek caribe - rumowych" >6x Caribe</option>
+                <option value="6 paczek caribe - rumowych" >7x Caribe</option>
+                <option value="7 paczek caribe - rumowych" >8x Caribe</option>
+            </select>
+            
+            <select id="Authentic" name="Authentic">
+                <option value="0" selected="selected">Authentic</option>
+                <option value="1 paczka Authentic - Klasycznych" >1x Authentic</option>
+                <option value="2 paczki Authentic - Klasycznych" >2x Authentic</option>
+                <option value="3 paczki Authentic - Klasycznych" >3x Authentic</option>
+                <option value="3 paczki Authentic - Klasycznych" >4x Authentic</option>
+                <option value="4 paczki Authentic - Klasycznych" >5x Authentic</option>
+                <option value="5 paczek Authentic - Klasycznych" >6x Authentic</option>
+                <option value="6 paczek Authentic - Klasycznych" >7x Authentic</option>
+                <option value="7 paczek Authentic - Klasycznych" >8x Authentic</option>
+            </select>
+            
+            <select id="Grape" name="Grape">
+                <option value="0" selected="selected">Grape</option>
+                <option value="1 paczka grape - winogronowych" >1x Grape</option>
+                <option value="2 paczki grape - winogronowych" >2x Grape</option>
+                <option value="3 paczki grape - winogronowych" >3x Grape</option>
+                <option value="3 paczki grape - winogronowych" >4x Grape</option>
+                <option value="4 paczki grape - winogronowych" >5x Grape</option>
+                <option value="5 paczek grape - winogronowych" >6x Grape</option>
+                <option value="6 paczek grape - winogronowych" >7x Grape</option>
+                <option value="7 paczek grape - winogronowych" >8x Grape</option>
             </select><br><br>
+            <h4>
+                <select id="Honney" name="Honney">
+                    <option value="0" selected="selected">Honney</option>
+                    <option value="1 paczka Honney - miodowych" >1x Honney</option>
+                    <option value="2 paczki Honney - miodowych" >2x Honney</option>
+                    <option value="3 paczki Honney - miodowych" >3x Honney</option>
+                    <option value="3 paczki Honney - miodowych" >4x Honney</option>
+                    <option value="4 paczki Honney - miodowych" >5x Honney</option>
+                    <option value="5 paczek Honney - miodowych" >6x Honney</option>
+                    <option value="6 paczek Honney - miodowych" >7x Honney</option>
+                    <option value="7 paczek Honney - miodowych" >8x Honney</option>
+                </select>
+                
+                <select id="Roussian Cream" name="Roussian Cream">
+                    <option value="0" selected="selected">Roussian Cream</option>
+                    <option value="1 paczka Honney - miodowych" >BRAK</option>
+                    <option value="2 paczki Honney - miodowych" >BRAK</option>
+                    <option value="3 paczki Honney - miodowych" >BRAK</option>
+                    <option value="3 paczki Honney - miodowych" >BRAK</option>
+                    <option value="4 paczki Honney - miodowych" >BRAK</option>
+                    <option value="5 paczek Honney - miodowych" >BRAK</option>
+                    <option value="6 paczek Honney - miodowych" >BRAK</option>
+                    <option value="7 paczek Honney - miodowych" >BRAK</option>
+                </select>
+                
+                <select id="Black Roussian Cream" name="Black Roussian Cream">
+                    <option value="0" selected="selected">Black Roussian Cream</option>
+                    <option value="1 paczka Honney - miodowych" >1x Black Roussian Cream</option>
+                    <option value="2 paczki Honney - miodowych" >BRAK</option>
+                    <option value="3 paczki Honney - miodowych" >BRAK</option>
+                    <option value="3 paczki Honney - miodowych" >BRAK</option>
+                    <option value="4 paczki Honney - miodowych" >BRAK</option>
+                    <option value="5 paczek Honney - miodowych" >BRAK</option>
+                    <option value="6 paczek Honney - miodowych" >BRAK</option>
+                    <option value="7 paczek Honney - miodowych" >BRAK</option>
+                </select><br><br>
+            </h4>
         </wybieranie.smaku> 
         
         
-        <div class="nazwaig"><center>
-            <label>Nazwa Twojego Instagrama</label>
-            <input type="text" name="Nazwa instagrama" placeholder="Wpisz nazwę swojego instagrama" size="35"><br><br>
-        </center></div>
+            <div class="nazwaig"><center>
+                <label><b>Nazwa Twojego Instagrama</b></label><br>
+                <input type="text" name="Nazwa instagrama" placeholder="Wpisz nazwę swojego instagrama" size="35" style="margin-top: 5px;"><br><br>
+            </center></div>
 
-        <div class="imie"><center>
-            <label>Twoje Imię</label> <br>
-            <input type="text" name="Imię" placeholder="Wpisz swoje Imię" size="19"><br><br>
-        </center></div>
+            <div class="imie"><center>
+                <label><b>Twoje Imię</b></label> <br>
+                <input type="text" name="Imię" placeholder="Wpisz swoje Imię" size="19" style="margin-top: 5px;"><br><br>
+            </center></div>
 
-        <div class="nazwisko"><center>
-            <label>Twoje Nazwisko</label> <br>
-            <input type="text" name="Nazwisko" placeholder="Wpisz swoje Nazwisko" size="23"><br><br>
-        </center></div>
+            <div class="nazwisko"><center>
+                <label><b>Twoje Nazwisko</b></label> <br>
+                <input type="text" name="Nazwisko" placeholder="Wpisz swoje Nazwisko" size="23" style="margin-top: 5px;"><br><br>
+            </center></div>
 
-        <center><input value="Wyślij" type="submit"></button></center>
+            <div class="email"><center>
+                <label><b>Twój adres e-mail</b></label> <br>
+                <input type="text" name="Adres e-mail" placeholder="Wpisz swój adres e-mail" size="27" style="margin-top: 5px;"><br><br>
+            </center></div>
+
+            <div class="numer"><center>
+                <label><b>Twój numer telefonu</b></label> <br>
+                <input type="text" name="Numer telefonu" placeholder="Wpisz swój numer telefonu" size="27" style="margin-top: 5px;"><br><br>
+            </center></div>
+
+                <div class="zdjecie"><a href="https://inpost.pl/znajdz-paczkomat" target="_blank"><img src="map.png"  width="30px" height="30px"></a></div>
+                
+            <div class="adres"><center>
+                <label><b>Dokładny adres paczkomatu</b></label> <br>
+                <input type="text" name="Adres Paczkomatu" placeholder="Wpisz  dokładny adres swojego paczkomatu" size="60" style="margin-top: 5px;"><br><br>
+            </center></div> 
+
+                <div class="zdjecie2"><a href="https://inpost.pl/znajdz-paczkomat" target="_blank"><img src="map.png"  width="30px" height="30px"></a></div>
+
+            <div class="numer.paczkomatu"><center>
+                <label><b>Numer wybranego paczkomatu</b></label> <br>
+                <input type="text" name="Numer paczkomatu" placeholder="Wpisz numer wybranego paczkomatu" size="35" style="margin-top: 5px;"><br><br>
+            </center></div>
+
+            <center><input value="Wyślij" type="submit"></button></center>
+        
     </form>
 </body>
 </html>
