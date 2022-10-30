@@ -4,97 +4,72 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
-<title>Backwoods.forms</title>
+<title>My Example</title>
+    <style>
+        body, ::placeholder, select, option{
+            font-family: "Courier New", monospace;
+            padding: 10px;
+            max-width: 500px;
+            margin: auto;
+        }   
 
-<!-- CSS -->
-<style>
-.myForm {
-font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-font-size: 0.8em;
-width: 30em;
-padding: 1em;
-}
+        h2, ::placeholder, option, div, button{
+            text-align: center;
+        }
+    </style>
 
-.myForm * {
-box-sizing: border-box;
-}
 
-.myForm label {
-padding: 0;
-font-weight: bold;
-text-align: right;
-display: block;
-}
-
-.myForm input,
-.myForm select,
-.myForm textarea {
-margin-left: 2em;
-float: right;
-width: 20em;
-border: 1px solid #ccc;
-font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-font-size: 0.9em;
-padding: 0.3em;
-}
-
-.myForm textarea {
-height: 100px;
-}
-
-.myForm button {
-padding: 1em;
-border-radius: 0.5em;
-background: #eee;
-border: none;
-font-weight: bold;
-margin-left: 14em;
-margin-top: 1.8em;
-}
-
-.myForm button:hover {
-background: #ccc;
-cursor: pointer;
-}
-</style>
 
 </head>
+
 <body>
 
-<form class="myForm" method="get" enctype="application/x-www-form-urlencoded" action="/html/codes/html_form_handler.cfm">
+<div id="form"></div>
+    <h2><center>Backwoods.Storeroom</center></h2>
+    <form>
+        <wybieranie.smaku>
+            <select id="pickup_place" name="pickup_place">
+                <option value="" selected="selected">Purple</option>
+                <option value="ilośćpurpli1" >1</option>
+                <option value="ilośćpurpli2" >2</option>
+                <option value="ilośćpurpli3" >3</option>
+                <option value="ilośćpurpli4" >4</option>
+                <option value="ilośćpurpli5" >5</option>
+                <option value="ilośćpurpli6" >6</option>
+                <option value="ilośćpurpli7" >7</option>
+                <option value="ilośćpurpli8" >8</option>
+            </select>
 
-<p>
-<label>Name 
-<input type="text" name="customer_name" required>
-</label> 
-</p>
+            <select id="pickup_place" name="pickup_place">
+                <option value="" selected="selected">blue</option>
+                <option value="ilośćblue1" >1</option>
+                <option value="ilośćblue2" >2</option>
+                <option value="ilośćblue3" >3</option>
+                <option value="ilośćblue3" >4</option>
+                <option value="ilośćblue4" >5</option>
+                <option value="ilośćblue5" >6</option>
+                <option value="ilośćblue6" >7</option>
+                <option value="ilośćblue7" >8</option>
+            </select><br><br>
+        </wybieranie.smaku> 
+        
+        
+        <div class="nazwaig"><center>
+            <label>Nazwa Twojego Instagrama</label>
+            <input type="text" name="name"placeholder="Wpisz nazwę swojego instagrama" size="35"><br><br>
+        </center></div>
 
-<p>
-<label>Email 
-<input type="email" name="email_address">
-</label>
-</p>
-	
-<p>
-<label>Enquiry Regarding 
-<select id="pickup_place" name="pickup_place">
-<option value="" selected="selected">Select One</option>
-<option value="website" >Our Website</option>
-<option value="membership" >Membership</option>
-<option value="telepathy" >We'll Guess!</option>
-</select>
-</label> 
-</p>
+        <div class="imie"><center>
+            <label>Twoje Imię</label> <br>
+            <input type="text" name="name"placeholder="Wpisz swoje Imię" size="19"><br><br>
+        </center></div>
 
-<p>
-<label>Enquiry 
-<textarea name="comments" maxlength="500"></textarea>
-</label>
-</p>
+        <div class="nazwisko"><center>
+            <label>Twoje Nazwisko</label> <br>
+            <input type="text" name="nazwisko" placeholder="Wpisz swoje Nazwisko" size="23"><br><br>
+        </center></div>
 
-<p><button>Submit Enquiry</button></p>
-
-</form>
-
+        <center><button>Wyślij</button></center>
+    </form>
 </body>
 </html>
