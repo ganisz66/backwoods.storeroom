@@ -25,9 +25,26 @@
             
         }
         
-        select, option {
+        select, option, label {
             font-weight: bold;
         }
+
+        label{
+            color: #33631f;
+            text-size-adjust: 10px;
+        
+        }
+
+        ::placeholder {
+            color: #bcbcbc;
+        }
+        
+        .map2 {
+            position: absolute;
+            right: 423px;
+            bottom: 120px;
+        }
+    
     </style>
 
 
@@ -163,23 +180,25 @@
             </center></div>
 
             <div class="email"><center>
-                <label><b>Twój adres e-mail</b></label> <br>
-                <input type="text" name="Adres e-mail" placeholder="Wpisz swój adres e-mail" size="27" style="margin-top: 5px;"><br><br>
+                <label for="email"><b>Twój adres e-mail</b></label> <br>
+                <input type="email" id="email" name="Adres e-mail" placeholder="Wpisz swój adres e-mail" size="27" style="margin-top: 5px;"><br><br>
             </center></div>
 
             <div class="numer"><center>
-                <label><b>Twój numer telefonu</b></label> <br>
-                <input type="text" name="Numer telefonu" placeholder="Wpisz swój numer telefonu" size="27" style="margin-top: 5px;"><br><br>
+                <label for="phone"><b>Twój numer telefonu</b></label> <br>
+                <input type="tel" id="phone" name="Numer telefonu" placeholder="Wpisz swój numer telefonu" size="27" style="margin-top: 5px;"><br><br>
             </center></div>
                 
             <div class="adres"><center>
                 <label><b>Dokładny adres paczkomatu</b></label> <br>
                 <input type="text" name="Adres Paczkomatu" placeholder="Wpisz  dokładny adres swojego paczkomatu" size="43" style="margin-top: 5px;"><br><br>
-            </center></div> 
+            </center></div>
 
             <div class="numer.paczkomatu"><center>
                 <label><b>Numer wybranego paczkomatu</b></label> <br>
-                <input type="text" name="Numer paczkomatu" placeholder="Wpisz numer wybranego paczkomatu" size="35" style="margin-top: 5px;"><br><br>
+                <input type="text" name="Numer paczkomatu" placeholder="Wpisz numer wybranego paczkomatu" size="35" style="margin-top: 5px;">
+                <div class="map2"> <img src="https://raw.githubusercontent.com/ganisz66/ganisz66.github.io/main/map.png" width="25px" height="25px"></div>
+                <br><br>
             </center></div>
 
             <center><input value="Wyślij" type="submit"></button></center>
