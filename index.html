@@ -55,13 +55,11 @@
             color: #bcbcbc;
         }
         
-        div.map11 {
+        div.map11, div.map22 {
             position: relative;
             width: 400px;
             height: 28px;
-            border: 3px solid #73AD21;
             
-
         }
 
         .map1 {
@@ -73,6 +71,15 @@
             
         }   
 
+        .map2 {
+            position: absolute;
+            right: -320px;
+            top: 0px;
+            bottom: 0px;
+            left: 0px;
+            
+        } 
+
         .map111 {
             position: absolute;
             right: 0px;
@@ -80,9 +87,17 @@
             bottom: 0px;
             left: -385px;
         }
+
+        .map222 {
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            bottom: 0px;
+            left: -320px;
+            
+        } 
     
         div.wypełnianie {
-            border: 3px solid #73AD21;
             width: 405px;
             margin: 0 auto; 
             text-align: center;
@@ -243,9 +258,10 @@
 
             <div class="numer.paczkomatu"><center>
                 <label><b>Numer wybranego paczkomatu</b></label> <br>
-                <input type="text" name="Numer paczkomatu" placeholder="Wpisz numer wybranego paczkomatu" size="35" style="margin-top: 5px;">
+                <div class="map22"><input type="text" name="Numer paczkomatu" placeholder="Wpisz numer wybranego paczkomatu" size="35" style="margin-top: 5px;">
                 <div class="map2"><a href="https://inpost.pl/znajdz-paczkomat" target="_blank"><img src="https://raw.githubusercontent.com/ganisz66/ganisz66.github.io/main/map.png" width="25px" height="25px"></a></div>
-            </center></div>
+                <div class="map222"><a href="https://inpost.pl/znajdz-paczkomat" target="_blank"><img src="https://raw.githubusercontent.com/ganisz66/ganisz66.github.io/main/map.png" width="25px" height="25px"></a></div>
+            </center></div> <br>
         </div>
 
             <center><input value="Wyślij" type="submit"></button></center>
