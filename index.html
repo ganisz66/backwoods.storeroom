@@ -57,45 +57,41 @@
         
         div.map11, div.map22 {
             position: relative;
-            width: 400px;
-            height: 28px;
+            width: 390px;
+            height: 20px;
+            overflow:visible;
             
         }
 
-        .map1 {
-            position: absolute;
-            right: -385px;
-            top: 0px;
+        div.map22 {
+            width: 330px;
+        }
+        
+        img.image1, img.image11 {
             bottom: 0px;
-            left: 0px;
-            
-        }   
+            right: 100%;
+            position: absolute;
+            margin: auto;
+            display: block;
+            overflow: visible;
 
-        .map2 {
-            position: absolute;
-            right: -320px;
-            top: 0px;
+        }
+        
+        img.image2, img.image22 {
             bottom: 0px;
-            left: 0px;
-            
-        } 
+            left: 100%;
+            position: absolute;
+            margin: auto;
+            display: block;
 
-        .map111 {
-            position: absolute;
-            right: 0px;
-            top: 0px;
-            bottom: 0px;
-            left: -385px;
+        }
+        
+        input {
+            margin: auto;
+            display: block;
         }
 
-        .map222 {
-            position: absolute;
-            right: 0px;
-            top: 0px;
-            bottom: 0px;
-            left: -320px;
-            
-        } 
+        
     
         div.wypełnianie {
             width: 405px;
@@ -123,6 +119,9 @@
             
             
         }
+
+        
+
         
           
     </style>
@@ -138,7 +137,7 @@
         <div class="logo">
             <img src="https://raw.githubusercontent.com/ganisz66/ganisz66.github.io/main/images/Bez_nazwy-1-removebg-preview.png" width="200px" height="100px">
                 <div class="english">
-                    <a href="https://ganisz66.github.io/backwoods.storeroom/backwoods-storeroom-eng.html" target="_blank"><img src="https://raw.githubusercontent.com/ganisz66/ganisz66.github.io/main/images/language-learning.png" width="40px" height="40px"></a>
+                    <a href="https://ganisz66.github.io/backwoods-storeroom-eng.html" target="_blank"><img src="https://raw.githubusercontent.com/ganisz66/ganisz66.github.io/main/images/language-learning.png" width="40px" height="40px"></a>
                 </div>
        </div>
 
@@ -194,11 +193,11 @@
                 <option value="1 paczka Authentic - Klasycznych" >1x Authentic</option>
                 <option value="2 paczki Authentic - Klasycznych" >2x Authentic</option>
                 <option value="3 paczki Authentic - Klasycznych" >3x Authentic</option>
-                <option value="3 paczki Authentic - Klasycznych" >4x Authentic</option>
-                <option value="4 paczki Authentic - Klasycznych" >5x Authentic</option>
-                <option value="5 paczek Authentic - Klasycznych" >6x Authentic</option>
-                <option value="6 paczek Authentic - Klasycznych" >7x Authentic</option>
-                <option value="7 paczek Authentic - Klasycznych" >8x Authentic</option>
+                <option value="3 paczki Authentic - Klasycznych" >BRAK</option>
+                <option value="4 paczki Authentic - Klasycznych" >BRAK</option>
+                <option value="5 paczek Authentic - Klasycznych" >BRAK</option>
+                <option value="6 paczek Authentic - Klasycznych" >BRAK</option>
+                <option value="7 paczek Authentic - Klasycznych" >BRAK</option>
             </select>
             
                 <select id="Honney" name="Honney">
@@ -280,17 +279,17 @@
                 
             <div class="adres"><center>
                 <label><b>Dokładny adres paczkomatu</b></label> <br>
-                <div class="map11"><input type="text" name="Adres Paczkomatu" placeholder="Wpisz  dokładny adres swojego paczkomatu" size="43" style="margin-top: 5px;"/>
-                <div class="map1"><a href="https://inpost.pl/znajdz-paczkomat" target="_blank"><img src="https://raw.githubusercontent.com/ganisz66/ganisz66.github.io/main/map.png" width="25px" height="25px"></a></div>
-                <div class="map111"><a href="https://inpost.pl/znajdz-paczkomat" target="_blank"><img src="https://raw.githubusercontent.com/ganisz66/ganisz66.github.io/main/map.png" width="25px" height="25px"></a></div>
-            </center></div></div><br>
+                <div class="map11"><input type="text" name="Adres Paczkomatu" placeholder="Wpisz  dokładny adres swojego paczkomatu" size="43" >
+                <a href="https://inpost.pl/znajdz-paczkomat" target="_blank"><img class="image1" src="https://raw.githubusercontent.com/ganisz66/ganisz66.github.io/main/map.png" width="25px" height="25px"></a> 
+                <a href="https://inpost.pl/znajdz-paczkomat" target="_blank"><img class="image2" src="https://raw.githubusercontent.com/ganisz66/ganisz66.github.io/main/map.png" width="25px" height="25px"></a>
+            </center></div><br><br>
 
             <div class="numer.paczkomatu"><center>
                 <label><b>Numer wybranego paczkomatu</b></label> <br>
-                <div class="map22"><input type="text" name="Numer paczkomatu" placeholder="Wpisz numer wybranego paczkomatu" size="35" style="margin-top: 5px;"/>
-                <div class="map2"><a href="https://inpost.pl/znajdz-paczkomat" target="_blank"><img src="https://raw.githubusercontent.com/ganisz66/ganisz66.github.io/main/map.png" width="25px" height="25px"></a></div>
-                <div class="map222"><a href="https://inpost.pl/znajdz-paczkomat" target="_blank"><img src="https://raw.githubusercontent.com/ganisz66/ganisz66.github.io/main/map.png" width="25px" height="25px"></a></div>
-            </center></div></div> <br>
+                <div class="map22"><input class="map22" type="text" name="Numer paczkomatu" placeholder="Wpisz numer wybranego paczkomatu" size="35" >
+                <a href="https://inpost.pl/znajdz-paczkomat" target="_blank"><img class=" image11" src="https://raw.githubusercontent.com/ganisz66/ganisz66.github.io/main/map.png" width="25px" height="25px"></a> 
+                <a href="https://inpost.pl/znajdz-paczkomat" target="_blank"><img class=" image22" src="https://raw.githubusercontent.com/ganisz66/ganisz66.github.io/main/map.png" width="25px" height="25px"></a>
+            </center></div> <br>
         </div>
 
             <center><input value="Wyślij" type="submit"></button></center>
