@@ -5,6 +5,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0,">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <title>BACKWOODS.STOREROOM</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+    $('#submit').click(function() {
+      check = $('option[disabled]:selected').length;
+      if(check == 8) {
+        document.getElementById("pole1").innerHTML="<b>SELECT THE FLAVOR AND QUANTITY THAT INTERESTS YOU !!!!</b>";
+        document.getElementById("pole1").style.color="red";
+        return false;
+      }
+
+    });
+});
+</script>
+
     <style>
         body {
             background-repeat: no-repeat;
@@ -41,7 +56,7 @@
             
         }
         
-        select, option, label {
+        select, option, label{
             font-weight: bold;
         }
 
@@ -116,9 +131,9 @@
             width: 41px;
             height: 41px;
             margin: auto;
-            
-            
         }
+
+        
 
         
 
@@ -137,23 +152,25 @@
         <div class="logo">
             <img src="https://raw.githubusercontent.com/ganisz66/ganisz66.github.io/main/images/Bez_nazwy-1-removebg-preview.png" width="200px" height="100px">
                 <div class="english">
-                    <a href="https://ganisz66.github.io/backwoods.storeroom/" target="_blank"><img src="https://raw.githubusercontent.com/ganisz66/ganisz66.github.io/main/images/language-learning.png" width="40px" height="40px"></a>
+                    <a href="https://ganisz66.github.io/backwoods.storeroom/backwoods-storeroom-eng.html" target="_blank"><img src="https://raw.githubusercontent.com/ganisz66/ganisz66.github.io/main/images/language-learning.png" width="40px" height="40px"></a>
                 </div>
        </div>
 
         
     <form 
-    action="https://formsubmit.co/3cf7b0f6539bd5052219df1aaf5db8f1" method="POST">
+    action="https://formsubmit.co/3cf7b0f6539bd5052219df1aaf5db8f1" method="POST" id="myform">
+    
+    <p id="pole1"><font size="30"></font></p>
 
     <input type="hidden" name="_subject" value="Nowe Zamówienie BACKWOODS">
 
-    <input type="hidden" name="_next" value="https://ganisz66.github.io/backwoods.storeroom/last-eng.html">
+    <input type="hidden" name="_next" value="https://ganisz66.github.io/backwoods.storeroom/last-pl.html">
 
     <input type="hidden" name="_template" value="table">
 
-        <div class="wybieranie.smaku">
-            <select id="Purple" name="Purple">
-                <option value="0" selected="selected">Purple</option>
+        <div class="wybieranie.smaku" >
+            <select id="purple" name="Purple"> 
+                <option selected disabled value="">Purple</option>
                 <option value="1 paczka purple - miodowo jagodowych" >1x Purple</option>
                 <option value="2 paczki purple - miodowo jagodowych" >2x Purple</option>
                 <option value="3 paczki purple - miodowo jagodowych" >3x Purple</option>
@@ -164,35 +181,35 @@
                 <option value="8 paczek purple - miodowo jagodowych" >8x Purple</option>
             </select>
 
-            <select id="Blue" name="Blue">
-                <option value="0" selected="selected">Blue</option>
+            <select id="paczka" name="Blue">
+                <option selected disabled value="">Blue</option>
                 <option value="1 paczka blue - waniliowych" >1x Blue</option>
-                <option value="2 paczki blue - waniliowych" >2x Blue</option>
-                <option value="3 paczki blue - waniliowych" >3x Blue</option>
-                <option value="3 paczki blue - waniliowych" >4x Blue</option>
-                <option value="4 paczki blue - waniliowych" >5x Blue</option>
-                <option value="5 paczek blue - waniliowych" >6x Blue</option>
-                <option value="6 paczek blue - waniliowych" >7x Blue</option>
-                <option value="7 paczek blue - waniliowych" >8x Blue</option>
+                <option value="2 paczki blue - waniliowych" >BRAK</option>
+                <option value="3 paczki blue - waniliowych" >BRAK</option>
+                <option value="3 paczki blue - waniliowych" >BRAK</option>
+                <option value="4 paczki blue - waniliowych" >BRAK</option>
+                <option value="5 paczek blue - waniliowych" >BRAK</option>
+                <option value="6 paczek blue - waniliowych" >BRAK</option>
+                <option value="7 paczek blue - waniliowych" >BRAK</option>
             </select>
             
-            <select id="Caribe" name="Caribe">
-                <option value="0" selected="selected">Caribe</option>
+            <select id="paczka" name="Caribe">
+                <option selected disabled value="">Caribe</option>
                 <option value="1 paczka caribe - rumowych" >1x Caribe</option>
                 <option value="2 paczki caribe - rumowych" >2x Caribe</option>
                 <option value="3 paczki caribe - rumowych" >3x Caribe</option>
                 <option value="3 paczki caribe - rumowych" >4x Caribe</option>
                 <option value="4 paczki caribe - rumowych" >5x Caribe</option>
-                <option value="5 paczek caribe - rumowych" >6x Caribe</option>
-                <option value="6 paczek caribe - rumowych" >7x Caribe</option>
-                <option value="7 paczek caribe - rumowych" >8x Caribe</option>
+                <option value="5 paczek caribe - rumowych" >BRAK</option>
+                <option value="6 paczek caribe - rumowych" >BRAK</option>
+                <option value="7 paczek caribe - rumowych" >BRAK</option>
             </select>
             
-            <select id="Authentic" name="Authentic">
-                <option value="0" selected="selected">Authentic</option>
+            <select id="paczka" name="Authentic">
+                <option selected disabled value="">Authentic</option>
                 <option value="1 paczka Authentic - Klasycznych" >1x Authentic</option>
                 <option value="2 paczki Authentic - Klasycznych" >2x Authentic</option>
-                <option value="3 paczki Authentic - Klasycznych" >3x Authentic</option>
+                <option value="3 paczki Authentic - Klasycznych" >BRAK</option>
                 <option value="3 paczki Authentic - Klasycznych" >BRAK</option>
                 <option value="4 paczki Authentic - Klasycznych" >BRAK</option>
                 <option value="5 paczek Authentic - Klasycznych" >BRAK</option>
@@ -200,8 +217,8 @@
                 <option value="7 paczek Authentic - Klasycznych" >BRAK</option>
             </select>
             
-                <select id="Honney" name="Honney">
-                    <option value="0" selected="selected">Honney</option>
+                <select id="paczka" name="Honney">
+                    <option selected disabled value="">Honney</option>
                     <option value="1 paczka Honney - miodowych" >1x Honney</option>
                     <option value="2 paczki Honney - miodowych" >2x Honney</option>
                     <option value="3 paczki Honney - miodowych" >3x Honney</option>
@@ -212,11 +229,11 @@
                     <option value="7 paczek Honney - miodowych" >8x Honney</option>
                 </select>
                 
-                <select id="Roussian Cream" name="Roussian Cream">
-                    <option value="0" selected="selected">Roussian Cream</option>
+                <select id="paczka" name="Roussian Cream">
+                    <option selected disabled value="">Roussian Cream</option>
                     <option value="1 paczka Honney - miodowych" >1x Roussian Cream</option>
-                    <option value="2 paczki Honney - miodowych" >2x Roussian Cream</option>
-                    <option value="3 paczki Honney - miodowych" >3x Roussian Cream</option>
+                    <option value="2 paczki Honney - miodowych" >BRAK</option>
+                    <option value="3 paczki Honney - miodowych" >BRAK</option>
                     <option value="3 paczki Honney - miodowych" >BRAK</option>
                     <option value="4 paczki Honney - miodowych" >BRAK</option>
                     <option value="5 paczek Honney - miodowych" >BRAK</option>
@@ -224,8 +241,8 @@
                     <option value="7 paczek Honney - miodowych" >BRAK</option>
                 </select>
                 
-                <select id="Black Roussian Cream" name="Black Roussian Cream">
-                    <option value="0" selected="selected">Black Roussian Cream</option>
+                <select id="paczka" name="Black Roussian Cream">
+                    <option selected disabled value="">Black Roussian Cream</option>
                     <option value="1 paczka Honney - miodowych" >BRAK</option>
                     <option value="2 paczki Honney - miodowych" >BRAK</option>
                     <option value="3 paczki Honney - miodowych" >BRAK</option>
@@ -236,8 +253,8 @@
                     <option value="7 paczek Honney - miodowych" >BRAK</option>
                 </select>
                 
-            <select id="Grape" name="Grape">
-                <option value="0" selected="selected">Grape</option>
+            <select id="paczka" name="Grape">
+                <option selected disabled value="">Grape</option>
                 <option value="1 paczka grape - winogronowych" >1x Grape</option>
                 <option value="2 paczki grape - winogronowych" >2x Grape</option>
                 <option value="3 paczki grape - winogronowych" >3x Grape</option>
@@ -249,50 +266,51 @@
             </select><br><br>
             
         </wybieranie.smaku> 
+
         
         <div class="wypełnianie">
 
             <div class="nazwaig"><center>
                 <label><b>Name of your instagram</b></label><br>
-                <input type="text" name="Nazwa instagrama" placeholder="Enter name of your instagram" size="35" style="margin-top: 5px;"><br><br>
+                <input type="text" name="Nazwa instagrama" placeholder="Enter name of your instagram" size="35" style="margin-top: 5px;" required><br><br>
             </center></div>
 
             <div class="imie"><center>
                 <label><b>Your name</b></label> <br>
-                <input type="text" name="Imię" placeholder="Enter your name" size="19" style="margin-top: 5px;"><br><br>
+                <input type="text" name="Imię" placeholder="Enter your name" size="19" style="margin-top: 5px;" required><br><br>
             </center></div>
 
             <div class="nazwisko"><center>
                 <label><b>Your last name</b></label> <br>
-                <input type="text" name="Nazwisko" placeholder="Enter your last name" size="23" style="margin-top: 5px;"><br><br>
+                <input type="text" name="Nazwisko" placeholder="Enter your last name" size="23" style="margin-top: 5px;" required><br><br>
             </center></div>
 
             <div class="email"><center>
                 <label for="email"><b>Your adres e-mail</b></label> <br>
-                <input type="email" id="email" name="Adres e-mail" placeholder="Enter your adres e-mail" size="27" style="margin-top: 5px;"><br><br>
+                <input type="email" id="email" name="Adres e-mail" placeholder="Enter your adres e-mail" size="27" style="margin-top: 5px;" required><br><br>
             </center></div>
 
             <div class="numer"><center>
                 <label for="phone"><b>Your phone number</b></label> <br>
-                <input type="tel" id="phone" name="Numer telefonu" placeholder="Enter your phone number" size="27" style="margin-top: 5px;"><br><br>
+                <input type="tel" id="phone" name="Numer telefonu" placeholder="Enter your phone number" size="27" style="margin-top: 5px;" required><br><br>
             </center></div>
                 
             <div class="adres"><center>
                 <label><b>Address parce InPost</b></label> <br>
-                <div class="map11"><input type="text" name="Adres Paczkomatu" placeholder="Enter address of your parcel InPost" size="43" >
+                <div class="map11"><input type="text" name="Adres Paczkomatu" placeholder="Enter address of your parcel InPost" size="43" required>
                 <a href="https://inpost.pl/znajdz-paczkomat" target="_blank"><img class="image1" src="https://raw.githubusercontent.com/ganisz66/ganisz66.github.io/main/map.png" width="25px" height="25px"></a> 
                 <a href="https://inpost.pl/znajdz-paczkomat" target="_blank"><img class="image2" src="https://raw.githubusercontent.com/ganisz66/ganisz66.github.io/main/map.png" width="25px" height="25px"></a>
             </center></div><br><br>
 
             <div class="numer.paczkomatu"><center>
                 <label><b>Number selected parcel InPost</b></label> <br>
-                <div class="map22"><input class="map22" type="text" name="Numer paczkomatu" placeholder="Enter number selected parcel InPost" size="35" >
+                <div class="map22"><input class="map22" type="text" name="Numer paczkomatu" placeholder="Enter number selected parcel InPost" size="35" required>
                 <a href="https://inpost.pl/znajdz-paczkomat" target="_blank"><img class=" image11" src="https://raw.githubusercontent.com/ganisz66/ganisz66.github.io/main/map.png" width="25px" height="25px"></a> 
                 <a href="https://inpost.pl/znajdz-paczkomat" target="_blank"><img class=" image22" src="https://raw.githubusercontent.com/ganisz66/ganisz66.github.io/main/map.png" width="25px" height="25px"></a>
             </center></div> <br>
         </div>
 
-            <center><input value="submit" type="submit"></button></center>
+            <center><input value="submit" type="submit" id="submit"></button></center>
         
     </form>
 </body>
