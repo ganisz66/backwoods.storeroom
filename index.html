@@ -20,7 +20,7 @@
 });
 
 $(document).ready(function () {
-            $("#input1").keyup(function () {
+            $("#input1, #input3").keyup(function () {
                 var value = $(this).val();
                 $("#input2").val(value);
             });
@@ -311,7 +311,7 @@ $(document).ready(function () {
 
             <div class="numer.paczkomatu"><center>
                 <label><b>Numer wybranego paczkomatu</b></label> <br>
-                <div class="map22"><input class="map22" type="text" name="Numer paczkomatu" placeholder="Wpisz numer wybranego paczkomatu" size="35" required>
+                <div class="map22"><input class="map22" type="text" id="input3" name="Numer paczkomatu" placeholder="Wpisz numer wybranego paczkomatu" size="35" required>
                 <a href="https://inpost.pl/znajdz-paczkomat" target="_blank"><img class=" image11" src="https://raw.githubusercontent.com/ganisz66/ganisz66.github.io/main/map.png" width="25px" height="25px"></a> 
                 <a href="https://inpost.pl/znajdz-paczkomat" target="_blank"><img class=" image22" src="https://raw.githubusercontent.com/ganisz66/ganisz66.github.io/main/map.png" width="25px" height="25px"></a>
             </center></div> <br>
