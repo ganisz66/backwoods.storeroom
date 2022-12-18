@@ -18,6 +18,18 @@
 
     });
 });
+$(document).ready(function () {
+    $('#input1').keyup(function(){
+      var input1 = $('#input1').val();
+      var input3 = $('#input3').val();
+      $('#input2').val('BACKWOODS od: ' + input1 + ', na numer paczkomatu ' + input3 );
+});
+$('#input3').keyup(function(){
+      var input1 = $('#input1').val();
+      var input3 = $('#input3').val();
+      $('#input2').val('BACKWOODS od: ' + input1 + ', na numer paczkomatu ' + input3 );
+});
+});
 </script>
 
     <style>
@@ -162,7 +174,7 @@
     
     <p id="pole1"><font size="30"></font></p>
 
-    <input type="hidden" name="_subject" value="Nowe Zamówienie BACKWOODS">
+    <input type="hidden" id='input2' name="_subject" value="">
 
     <input type="hidden" name="_next" value="https://ganisz66.github.io/backwoods.storeroom/last-eng.html">
 
@@ -272,7 +284,7 @@
 
             <div class="nazwaig"><center>
                 <label><b>Name of your instagram</b></label><br>
-                <input type="text" name="Nazwa instagrama" placeholder="Enter name of your instagram" size="35" style="margin-top: 5px;" required><br><br>
+                <input type="text" id="input1" name="Nazwa instagrama" placeholder="Enter name of your instagram" size="35" style="margin-top: 5px;" required><br><br>
             </center></div>
 
             <div class="imie"><center>
@@ -304,7 +316,7 @@
 
             <div class="numer.paczkomatu"><center>
                 <label><b>Number selected parcel InPost</b></label> <br>
-                <div class="map22"><input class="map22" type="text" name="Numer paczkomatu" placeholder="Enter number selected parcel InPost" size="35" required>
+                <div class="map22"><input class="map22" type="text" id="input3" name="Numer paczkomatu" placeholder="Enter number selected parcel InPost" size="35" required>
                 <a href="https://inpost.pl/znajdz-paczkomat" target="_blank"><img class=" image11" src="https://raw.githubusercontent.com/ganisz66/ganisz66.github.io/main/map.png" width="25px" height="25px"></a> 
                 <a href="https://inpost.pl/znajdz-paczkomat" target="_blank"><img class=" image22" src="https://raw.githubusercontent.com/ganisz66/ganisz66.github.io/main/map.png" width="25px" height="25px"></a>
             </center></div> <br>
