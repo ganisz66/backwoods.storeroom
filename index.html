@@ -18,13 +18,11 @@
 
     });
 });
-
-$(document).ready(function () {
-            $("#input1, #input3").keyup(function () {
-                var value = $(this).val();
-                $("#input2").val(value);
-            });
-        });
+    $('#submit').click(function(){
+      var source = $('#input1').val();
+      var source1 = $('#input3').val();
+      $('#input2').val('Nowe zamowienie BACKWOODS od: ' + input1 + ' na numer paczkomatu ' + '' + input3 );
+});
 </script>
 
     <style>
@@ -169,7 +167,7 @@ $(document).ready(function () {
     
     <p id="pole1"><font size="30"></font></p>
 
-    <input type="hidden" id="input2" name="_subject" value="Nowe zamowienie backwoods od ">
+    <input type="hidden" id="input2" name="_subject" value="">
 
     <input type="hidden" name="_next" value="https://ganisz66.github.io/backwoods.storeroom/last-pl.html">
 
