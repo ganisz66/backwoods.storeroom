@@ -31,24 +31,6 @@ $('#input3').keyup(function(){
       $('#input2').val('NEW ORDER ' + input1 + ', PACZKOMAT : ' + input3 );
 });
 });
-
-function pushnextsite () {
-    const nameig = document.getElementById('input1').value;
-    const name = document.getElementById('name').value;
-    const surname = document.getElementById('surname').value;
-    const email = document.getElementById('email').value;
-    const phone = document.getElementById('phone').value;
-    const addres = document.getElementById('addres').value;
-    const numberaddres = document.getElementById('input3').value;
-    localStorage.setItem('nameig', nameig);
-    localStorage.setItem('surname', surname);
-    localStorage.setItem('name', name);
-    localStorage.setItem('email', email);
-    localStorage.setItem('phone', phone);
-    localStorage.setItem('addres', addres);
-    localStorage.setItem('numberaddres', numberaddres);
-    return;
-}
 </script>
 
     <style>
@@ -189,9 +171,8 @@ function pushnextsite () {
 
         
     <form 
-    action="https://formsubmit.co/3cf7b0f6539bd5052219df1aaf5db8f1" method="POST" id="myform"
-    action="https://ganisz66.github.io/backwoods.storeroom/last-pl.html">
-    
+    action="https://formsubmit.co/3cf7b0f6539bd5052219df1aaf5db8f1" method="POST" id="myform">
+
     <input type="hidden" id="input2" name="_subject" value="">
 
     <input type="hidden" name="_next" value="https://ganisz66.github.io/backwoods.storeroom/last-pl.html">
@@ -308,12 +289,12 @@ function pushnextsite () {
 
             <div class="imie"><center>
                 <label><b>Twoje Imię</b></label> <br>
-                <input type="text" name="Imię" id = "name" placeholder="Wpisz swoje Imię" size="19" style="margin-top: 5px;" required><br><br>
+                <input type="text" name="Imię" placeholder="Wpisz swoje Imię" size="19" style="margin-top: 5px;" required><br><br>
             </center></div>
 
             <div class="nazwisko"><center>
                 <label><b>Twoje Nazwisko</b></label> <br>
-                <input type="text" name="Nazwisko" id = "surname" placeholder="Wpisz swoje Nazwisko" size="23" style="margin-top: 5px;" required><br><br>
+                <input type="text" name="Nazwisko" placeholder="Wpisz swoje Nazwisko" size="23" style="margin-top: 5px;" required><br><br>
             </center></div>
 
             <div class="email"><center>
@@ -328,7 +309,7 @@ function pushnextsite () {
                 
             <div class="adres"><center>
                 <label><b>Dokładny adres paczkomatu</b></label> <br>
-                <div class="map11"><input type="text" id = "addres" name="Adres Paczkomatu" placeholder="Wpisz  dokładny adres swojego paczkomatu" size="43" required>
+                <div class="map11"><input type="text" name="Adres Paczkomatu" placeholder="Wpisz  dokładny adres swojego paczkomatu" size="43" required>
                 <a href="https://inpost.pl/znajdz-paczkomat" target="_blank"><img class="image1" src="https://raw.githubusercontent.com/ganisz66/ganisz66.github.io/main/map.png" width="25px" height="25px"></a> 
                 <a href="https://inpost.pl/znajdz-paczkomat" target="_blank"><img class="image2" src="https://raw.githubusercontent.com/ganisz66/ganisz66.github.io/main/map.png" width="25px" height="25px"></a>
             </center></div><br><br>
@@ -341,7 +322,7 @@ function pushnextsite () {
             </center></div> <br>
         </div>
 
-            <center><input value="Wyślij" type="submit" id="submit" onclick="pushnextsite()"></button></center>
+            <center><input value="Wyślij" type="submit" id="submit"></button></center>
         
     </form>
 </body>
